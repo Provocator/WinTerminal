@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Payment.Terminal.exe" version="1.7.1.8" publicKeyToken="f5a2b217dbf21ebe" language="uk" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Payment.Terminal.exe" version="1.7.1.8" publicKeyToken="f7b00b470dd06529" language="uk" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="easysoft-win.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -10,15 +10,7 @@
   <trustInfo>
     <security>
       <applicationRequestMinimum>
-        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="Internet" Description="Default rights given to Internet applications" ID="Custom" SameSite="site">
-          <IPermission version="1" class="System.Security.Permissions.FileDialogPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Access="Open" />
-          <IPermission UserQuota="1024000" version="1" class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Allowed="ApplicationIsolationByUser" />
-          <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Execution" />
-          <IPermission version="1" class="System.Security.Permissions.UIPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Clipboard="OwnClipboard" Window="SafeTopLevelWindows" />
-          <IPermission version="1" class="System.Drawing.Printing.PrintingPermission, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Level="SafePrinting" />
-          <IPermission version="1" class="System.Security.Permissions.MediaPermission, WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Audio="SafeAudio" Image="SafeImage" Video="SafeVideo" />
-          <IPermission version="1" class="System.Security.Permissions.WebBrowserPermission, WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Level="Safe" />
-        </PermissionSet>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="Internet" Description="Default rights given to Internet applications" Unrestricted="true" ID="Custom" SameSite="site" />
         <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
@@ -75,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BPOS1Lib.dll" size="30720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BPOS1Lib.dll" size="31232">
       <assemblyIdentity name="BPOS1Lib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kKT1cyMbOUn+qzCQWBYfk2gXTa0roJusUjWc4o2D1lQ=</dsig:DigestValue>
+        <dsig:DigestValue>ZPzS4WZA6uhtl0INSsBI2b5C0oG8imyhMmL0bi7c0tY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -135,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LibRro.dll" size="49152">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LibRro.dll" size="50176">
       <assemblyIdentity name="LibRro" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Esr6iyqPlHNvf+cTPEPU7sFoWAzNGMZ9yCmWFJgtpn0=</dsig:DigestValue>
+        <dsig:DigestValue>ZM7rvmfpiSo36SHqHLP5xdO4/KcZYARI7JWscccc2bo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -171,14 +163,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Payment.Terminal.exe" size="903136">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Payment.Terminal.exe" size="904160">
       <assemblyIdentity name="Payment.Terminal" version="1.7.1.8" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bSLyChWtq2jgF9nT+e4aOB5Y1NwWkOyHMVBFKqMRqck=</dsig:DigestValue>
+        <dsig:DigestValue>yxj4qfaGmIbj51DjOcJYq6hOu0IDmGtV0vZh4zZ0K+s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -241,4 +233,4 @@
       <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
     </application>
   </compatibility>
-<publisherIdentity name="CN=DESKTOP-UJGN00D\Anton" issuerKeyHash="3d94d2f2296556c3bbebece24f23c135b88b95a7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>aaBRcEsmREjWdXNt5GDEiLzjeEZc9as2604aODX3bvs=</DigestValue></Reference></SignedInfo><SignatureValue>r0jZRozMlraCmIqewSiYopOuIdI+4qblA4atTMSmZgbaxEqCtjOBTmDH7KDC5CFMOdoDAb7pbCCdNBe+ehz4JYGJP71bRlY3U34EmpLJoZVJjLkY+4LTMXie66vRw4ESqH3lDgOtbg6qfIL7coSes8dzY9as6opRJNISVSTGyak=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1LP3wyX9pfWn5uGXfb5ozhzp5ShlEI8RsJns9RjRXIrqHFz9b1tQ/DVhOpb7ZXVZw3xZvuHVkR34AZem0vI2IQm80bNS1EZwOCF2oq6xgXq/M8GMNRl+y2VLqMe2a+ORu5ILxZ7fslMoXOnPM9E0TS5GoroggzfLQIX1NdA8Ch0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="fb6ef735381a4eeb36abf55c4678e3bc88c460e46d7375d64844264b7051a069" Description="" Url=""><as:assemblyIdentity name="Payment.Terminal.exe" version="1.7.1.8" publicKeyToken="f5a2b217dbf21ebe" language="uk" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-UJGN00D\Anton</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>hlKocp0qREdgW0I/RWv7Ary0AujGsez71D/mHXoxauU=</DigestValue></Reference></SignedInfo><SignatureValue>CXFkLJc/s0/0vTkS/W9acfWEnzQ8KyaSbP69slD3kcR7xvRAFV/BOLEvEJaseImNzE23qaPdNYHSGrUEdmE1lLVtVjEqhqiIlnA7NYMqQtMFcCWfjPTTKHRczTgzgYeeFSDnTVJzSM2pFhPJmK/wOKYq5nDwbrH55ipKyiWE5Mo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1LP3wyX9pfWn5uGXfb5ozhzp5ShlEI8RsJns9RjRXIrqHFz9b1tQ/DVhOpb7ZXVZw3xZvuHVkR34AZem0vI2IQm80bNS1EZwOCF2oq6xgXq/M8GMNRl+y2VLqMe2a+ORu5ILxZ7fslMoXOnPM9E0TS5GoroggzfLQIX1NdA8Ch0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQbQ56B7HtO6NFuj9ZsKOZXDANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFUASgBHAE4AMAAwAEQAXABBAG4AdABvAG4wHhcNMjAxMjExMTAwNjUwWhcNMjExMjExMTYwNjUwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAFUASgBHAE4AMAAwAEQAXABBAG4AdABvAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANSz98Ml/aX1p+bhl32+aM4c6eUoZRCPEbCZ7PUY0VyK6hxc/W9bUPw1YTqW+2V1WcN8Wb7h1ZEd+AGXptLyNiEJvNGzUtRGcDghdqKusYF6vzPBjDUZfstlS6jHtmvjkbuSC8We37JTKFzpzzPRNE0uRqK6IIM3y0CF9TXQPAodAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAjVHKDLwpXMC1Ak4f5VcQS6AIdUHagqIGl3iLCss0zqMT1TIBEcB/GDDcOq7v5rxM/CA3UdQys75nok6QRCyr/wnvltKXqo2FOl0pxlF2Zj8wbvOY+j7O0PoZfn9yHejsfIpJrqKbTyqwfHRtyrDrWOBnfc2lmf62sarBVrAhePQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=DESKTOP-FBVKR44\admin" issuerKeyHash="6367ed2f69c67f952d4cb9e2690d22fd84829d43" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>X7EGAv38jWYdU6X1mSV8qRWU2cxO896pp4kz2Hl+AD8=</DigestValue></Reference></SignedInfo><SignatureValue>DOiA0PZta9/Xurw+5ZRww6oueCtbGfw34HVIXnQEFp6IfRMP9kHdRCbp2Ws4uxS64HlI2S+90TVoh2xgpKdDxevLmcThYs+S+z6S2cTHQbRODXeLXUrnS5g2KoHGFeqvPHjH6o2pYAo6ukeeBFOAHeb3oRp4Q8StxmW6edQLTrE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xl6e5QJP9kgawdbfIvzmi56F9aUFr9XHpICrJlh0Pf+jAMyaijhSCdoNcjW0uiVwwkwbeFao7RzKDOCallpD1ecC4AonjKC7bIR/fa9cjw/oiyI5fsKfM4PRPhfAeunEa0mEKPJuFp/tv49AUM3NSYwxVrM1M7nVDTNVP28CVy0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3f007e79d83389a7a9def34eccd99415a97c2599f5a5531d668dfcfd0206b15f" Description="" Url=""><as:assemblyIdentity name="Payment.Terminal.exe" version="1.7.1.8" publicKeyToken="f7b00b470dd06529" language="uk" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-FBVKR44\admin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>R91L1Uf7ICXFwYw9OED94m8bzzyf256GU0fQNuURq7I=</DigestValue></Reference></SignedInfo><SignatureValue>s3z0eziXsI9khMOVGJkIMvEUTQG1b/aMlLQMW6xMGMVCJ8p8cnYdiVZaotr/L6VA4Xp8s8mfz9SIhdpll18F20eWPCY0seIBhIillZBLUreLJUajRJycnAfNAMjaXe+9PaU29+XUyrP9E5u38wSxpW0QCml4s8XEp+j+WCzI9CY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xl6e5QJP9kgawdbfIvzmi56F9aUFr9XHpICrJlh0Pf+jAMyaijhSCdoNcjW0uiVwwkwbeFao7RzKDOCallpD1ecC4AonjKC7bIR/fa9cjw/oiyI5fsKfM4PRPhfAeunEa0mEKPJuFp/tv49AUM3NSYwxVrM1M7nVDTNVP28CVy0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQf5vfFE093ZxOS9Ip5pkC/jANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEYAQgBWAEsAUgA0ADQAXABhAGQAbQBpAG4wHhcNMjAxMjEzMTc0NzM0WhcNMjExMjEzMjM0NzM0WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEYAQgBWAEsAUgA0ADQAXABhAGQAbQBpAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMZenuUCT/ZIGsHW3yL85ouehfWlBa/Vx6SAqyZYdD3/owDMmoo4UgnaDXI1tLolcMJMG3hWqO0cygzgmpZaQ9XnAuAKJ4ygu2yEf32vXI8P6IsiOX7CnzOD0T4XwHrpxGtJhCjybhaf7b+PQFDNzUmMMVazNTO51Q0zVT9vAlctAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAK1aoA9ztq9NsYEwknbm6tQZNZ7rPV1gRhwfOyX5nKaDnAfsSvQQwWyRdgbdVAdXwfhr83veTo3kDmsBItUu8Lt6P2h3+BDDKPfWuWlRflHx0LsUSwuVAf+52ijCTCZJzbpIIM7OXccHKGTjIQs08RNcRu7osOSxjULc/vWApcbQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
